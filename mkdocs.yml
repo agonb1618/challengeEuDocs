@@ -16,6 +16,12 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/extra.js
+  - https://unpkg.com/lucide@latest
+  - https://cdn.tailwindcss.com
+
+extra:
+  analytics:
+    provider: google
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -25,8 +31,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - attr_list
   - md_in_html
+
+
 
 nav:
   - Home: index.md
@@ -35,7 +45,7 @@ nav:
       - Colors: branding/colors.md
       - Typography: branding/typography.md
   - Developer Guide:
-      - Setup: developer/developer.md
+      - Developer: developer/developer.md
   - WordPress Guide:
       - Forms: wordpress/forms.md
       - Content: wordpress/content.md
